@@ -11,7 +11,8 @@ function Header({ savedProperties }) {
       <h1 className="text-8xl flex-1">Posh Properties</h1>
       <button
       disabled={savedProperties.length === 0}
-        className="inline-flex items-center mr-5 disabled:text-slate-400"
+        className="inline-flex items-center mr-5 disabled:text-slate-400 hover:font-bold"
+        title="Click to see your bookmarked properties"
         onClick={() => setIsFav((prevState) => !prevState)}
       >
         <p>Bookmarked</p>
